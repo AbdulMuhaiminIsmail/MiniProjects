@@ -1,6 +1,3 @@
-# Project: Files Sorter
-# Programmer : ZEUS
-
 # This program automatically sorts files in their folders.
 
 import os
