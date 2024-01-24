@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <TextView
+        android:id="@+id/BalanceList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/aleo_bold"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textColor="#1AFF00"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lowerDivider2"
+        app:layout_constraintStart_toEndOf="@+id/verticalDivider" />
+
+    <TextView
+        android:id="@+id/AmountList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/aleo_bold"
+        android:maxLines="16"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/upperDivider" />
+
+    <TextView
+        android:id="@+id/BalanceHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/aleo_bold"
+        android:text="Balance"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lowerDivider2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/SpendingList"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/aleo_bold"
+        android:maxLines="16"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        android:textColor="#FFBF00"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/upperDivider" />
+
+    <View
+        android:id="@+id/lowerDivider1"
+        android:layout_width="450dp"
+        android:layout_height="4dp"
+        android:layout_marginBottom="63dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/lowerDivider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/SpendingHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/aleo_bold"
+        android:text="Spending"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/upperDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/AmountHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/aleo_bold"
+        android:text="Amount"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/upperDivider"
+        app:layout_constraintStart_toStartOf="@+id/verticalDivider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/UpdateList"
+        android:layout_width="149dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="28dp"
+        android:background="#FFAA00"
+        android:onClick="displayUpdateSheet"
+        android:text="Update List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lowerDivider2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/UpdateBalance"
+        android:layout_width="160dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="28dp"
+        android:background="#FFAA00"
+        android:onClick="displayUpdateBalanceScreen"
+        android:text="Update Balance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lowerDivider2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:id="@+id/lowerDivider2"
+        android:layout_width="450dp"
+        android:layout_height="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="104dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/upperDivider"
+        android:layout_width="450dp"
+        android:layout_height="4dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/lowerDivider2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/verticalDivider"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <View
+        android:id="@+id/verticalDivider"
+        android:layout_width="4dp"
+        android:layout_height="1050dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
